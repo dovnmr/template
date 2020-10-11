@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(template)
+project(template VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set(CMAKE_CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON

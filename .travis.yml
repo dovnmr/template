@@ -22,4 +22,4 @@ deploy:
   -provider: script
   skip_cleanup: true
   script:
-  - curl -f -T template-Linux.deb -udovnmr:$BINTRAY_API_KEY "https://api.bintray.com/content/dovnmr/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/template-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T template-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -udovnmr:$BINTRAY_API_KEY "https://api.bintray.com/content/dovnmr/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/template-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
