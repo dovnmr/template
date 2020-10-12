@@ -1,6 +1,11 @@
 dist: xenial
 language: cpp
 compiler: clang
+
+branches:
+  only:
+   - master
+
 addons:
   apt:
     packages:
