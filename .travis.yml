@@ -4,8 +4,10 @@ compiler: clang
 addons:
   apt:
     packages:
-    - libboost-test-dev
-    - libspdlog-dev
+#    - libboost-test-dev
+#    - libspdlog-dev
+     - doxygen
+     - graphviz
 script:
 - cmake .
 - cmake --build .
