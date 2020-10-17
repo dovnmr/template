@@ -25,7 +25,7 @@ deploy:
     skip_cleanup: true
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep_history: true
-    lacal:dir: $TRAVIS_BUILD_DIR/html
+    local_dir: $TRAVIS_BUILD_DIR/doxygen/html
     on:
       branch: master
   - provider: script
