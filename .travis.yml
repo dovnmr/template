@@ -21,8 +21,8 @@ script:
 - doxygen doxygen.conf
 
 deploy:
-  - provider: script,
-    skip_cleanup: true,
+  - provider: script
+    skip_cleanup: true
     script: 
       -curl -T template-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -udovnmr:${BINTRAY_API_KEY} "https://api.bintray.com/content/dovnmr/otus-cpp/template/${TRAVIS_BUILD_NUMBER}/template-0.0.${TRAVIS_BUILD_NUMBER}-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
     on:
